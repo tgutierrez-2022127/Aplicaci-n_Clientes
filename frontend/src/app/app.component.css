@@ -1,0 +1,50 @@
+.app-container {
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(135deg, var(--gray-900), var(--primary-dark), var(--secondary));
+    padding: 0 30px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-lg);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid rgba(255,255,255,0.1);
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+    letter-spacing: -0.5px;
+    background: linear-gradient(135deg, #fff 60%, rgba(255,255,255,0.7));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 2px 20px rgba(99, 102, 241, 0.3);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--gray-400);
+    font-size: 13px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    header { height: 65px; padding: 0 15px; }
+    header h1 { font-size: 18px; }
+    main { padding: 15px; }
+}
